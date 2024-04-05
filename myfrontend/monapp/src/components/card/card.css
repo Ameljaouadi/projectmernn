@@ -1,0 +1,28 @@
+/* card.css */
+
+.lacarde {
+    margin-left: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .card-container {
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .ant-card {
+    width: 300px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add more styles as needed */
+  

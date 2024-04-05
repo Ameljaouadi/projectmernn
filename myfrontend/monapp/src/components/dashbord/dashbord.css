@@ -1,0 +1,39 @@
+.icon{
+  border-radius: 40%;
+  font-size: 180%;
+  color: rgb(0, 0, 0);
+  background-color: rgba(13, 119, 155, 0.5);
+  padding: 8%;
+}
+  
+.lacarde {
+  
+  width: 100%;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 5%;
+  padding-left: 10%;
+  height: 100% !important; 
+ 
+} 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* Adjust the width of cards for different screen sizes */
+@media screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ant-card {
+    width: 50%;
+    margin-bottom: 16px;
+  }
+}
+.card-title {
+  font-size: 18px; /* Ajustez la taille de la police selon vos besoins */
+  font-weight: bold; /* Ajustez le poids de la police selon vos besoins */
+  color: #333;
+}

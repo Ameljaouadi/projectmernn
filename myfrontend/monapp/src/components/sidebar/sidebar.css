@@ -1,0 +1,127 @@
+/* NX = not expanded */
+
+.side-nav-container {
+	background-color: #005555;
+	width: 220px;
+	height: auto;
+	position: fixed;
+	color: rgb(0, 0, 0);
+	top: 0; /* Ajustez la position verticale au besoin, par exemple, top: 0 pour être aligné en haut */
+	left: 0; /* Ajustez la position horizontale au besoin, par exemple, left: 0 pour être aligné à gauche */
+	height: 100%;
+
+	transition: 0.4s;
+}
+.side-nav-container-NX {
+	width: 85px;
+}
+
+.nav-upper,
+.nav-heading,
+.nav-menu,
+.menu-item{
+	/* border: 2px solid white; */
+	display: grid;
+}
+
+.nav-heading {
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr;
+	height: 5dvh;
+}
+
+.nav-brand {
+	display: flex;
+	color: white;
+}
+
+
+.hamburger {
+	background: none;
+	border: none;
+	cursor: pointer;
+	margin: auto;
+}
+
+.hamburger span {
+	display: block;
+	margin-top: 5px;
+	background-color: white;
+	border-radius: 15px;
+	height: 5px;
+	width: 35px;
+
+	transition: 0.4s;
+}
+
+.hamburger:hover span {
+	background-color: antiquewhite;
+}
+
+.hamburger-in:hover span:nth-child(1) {
+	width: 25px;
+	transform: translateY(4px) rotate(-25deg);
+}
+.hamburger-in:hover span:nth-child(2) {
+	width: 40px;
+}
+.hamburger-in:hover span:nth-child(3) {
+	width: 25px;
+	transform: translateY(-4px) rotate(25deg);
+}
+/* ///////////////////// */
+/* ///////////////////// */
+/* ///////////////////// */
+/* ///////////////////// */
+.hamburger-out {
+	margin-left: 10px;
+
+}
+.hamburger-out:hover span:nth-child(1) {
+	width: 15px;
+	transform: translate(14px, 4px) rotate(-155deg);
+
+}
+.hamburger-out:hover span:nth-child(2) {
+	width: 40px;
+}
+.hamburger-out:hover span:nth-child(3) {
+	width: 25px;
+	transform: translate(14px, -4px) rotate(155deg);
+}
+
+.nav-menu {
+	grid-template-rows: repeat(7, 1fr);
+	margin-top: 70px;
+}
+
+
+.menu-item {
+	height: 50px;
+	display: flex;
+	color: antiquewhite;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	border-radius: 10px;
+	align-items: center;
+	
+}
+.menu-item p{
+	color: white;
+	margin-left: 10px;
+	margin-top: 18px;
+}
+
+
+.menu-item-NX {
+	margin: auto;
+}
+.menu-item:hover {
+	background-color: var(--primary);
+}
+
+
+
+
+

@@ -1,0 +1,60 @@
+/* Ajoutez ces styles à votre fichier navbar.css */
+
+.nav {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  background: rgb(0, 33, 65);
+  padding: 0 2rem;
+  transition: opacity 0.5s ease, margin-top 0.5s ease; /* Ajout de transitions pour opacity et margin-top */
+  opacity: 1; /* Valeur par défaut, la barre de navigation est visible */
+  border-radius: 20px;
+  margin-top: -5px;
+  margin-left: 210px;
+}
+
+.nav__brand {
+  text-transform: uppercase;
+}
+.nav__expanded {
+  /* Adjust width or any other styles as needed */
+  width: calc(100% - [SidebarWidth]);
+}
+
+.nav__icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav__icons p {
+  color: white;
+  margin: 0;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 8vh;
+  right: 2rem;
+  background: rgb(0, 33, 65);
+  transform: translateX(100%);
+  transition: 0.5s ease-in;
+}
+
+.nav__visible {
+  opacity: 0;
+  margin-top: -8vh; /* Masquer la barre de navigation en déplaçant vers le haut */
+}
+
+/* Nouveau style pour le nom d'utilisateur */
+.nav__username {
+  color: white;
+  margin-left: 0.5rem;
+}
+
+
+
+
